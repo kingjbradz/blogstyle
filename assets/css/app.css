@@ -1,6 +1,10 @@
 /* This file is for your main application CSS */
 @import "./phoenix.css";
 
+body {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(120,120,204,1) 22%, rgba(0,212,255,1) 100%);
+}
+
 /* Alerts and form errors used by phx.new */
 .alert {
   padding: 15px;
@@ -98,4 +102,26 @@
 }
 .comment.header {
   font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
+h2:hover, a:hover {
+  color: white;
+  background-color: black;
+  transition: 0.7s;
+}
+
+ul {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+.row {
+  margin-left: 10rem;
 }

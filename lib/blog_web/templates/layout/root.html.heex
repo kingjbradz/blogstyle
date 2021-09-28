@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <%= csrf_meta_tag() %>
-    <%= live_title_tag assigns[:page_title] || "Blog", suffix: " · Phoenix Framework" %>
+    <%= live_title_tag assigns[:page_title] || "Blog", suffix: " · Jordan's Blog" %>
     <link phx-track-static rel="stylesheet" href={Routes.static_path(@conn, "/assets/app.css")}/>
     <script defer phx-track-static type="text/javascript" src={Routes.static_path(@conn, "/assets/app.js")}></script>
   </head>
@@ -14,14 +14,11 @@
       <section class="container">
         <nav>
           <ul>
-            <li><a href="https://hexdocs.pm/phoenix/overview.html">Get Started</a></li>
-            <%= if function_exported?(Routes, :live_dashboard_path, 2) do %>
-              <li><%= link "LiveDashboard", to: Routes.live_dashboard_path(@conn, :home) %></li>
-            <% end %>
+            <li id="link"><a href="/posts">Posts</a></li>
           </ul>
         </nav>
-        <a href="https://phoenixframework.org/" class="phx-logo">
-          <img src={Routes.static_path(@conn, "/images/phoenix.png")} alt="Phoenix Framework Logo"/>
+        <a href="/" class="phx-logo">
+          <img src="https://scontent-syd2-1.xx.fbcdn.net/v/t1.6435-9/242349200_10159307088644070_8733427542764279126_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=CatVdxcec4UAX_hsjr0&tn=k3S_uJfmcpUsziRq&_nc_ht=scontent-syd2-1.xx&oh=51b4af86db92e8bbf16ca6d8e6b6f42c&oe=6178DBD0" alt="Phoenix Framework Logo"/>
         </a>
       </section>
     </header>

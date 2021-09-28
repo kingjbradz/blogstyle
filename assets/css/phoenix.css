@@ -31,16 +31,22 @@ select {
 /* Phoenix promo and logo */
 .phx-hero {
   text-align: center;
-  border-bottom: 1px solid #e3e3e3;
-  background: #eee;
+  background: transparent;
   border-radius: 6px;
   padding: 3em 3em 1em;
   margin-bottom: 3rem;
   font-weight: 200;
   font-size: 120%;
 }
+
+#welcome-text:hover {
+  color: white;
+  background-color: black;
+  transition: 0.7s;
+}
+
 .phx-hero input {
-  background: #ffffff;
+  background: #3c2b2b;
 }
 .phx-logo {
   min-width: 300px;
@@ -55,10 +61,10 @@ select {
 /* Headers */
 header {
   width: 100%;
-  background: #fdfdfd;
-  border-bottom: 1px solid #eaeaea;
+  background: transparent;
   margin-bottom: 2rem;
 }
+
 header section {
   align-items: center;
   display: flex;
